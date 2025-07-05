@@ -1,0 +1,219 @@
+:root{
+    --main_color : #ffde59;
+    --text_color : #fff;
+    --red_color : red;
+    --Category_container_color : #f5f3f3;
+    --addtocartbutton : #ffbd59;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    
+}
+a{
+    text-decoration: none;
+    color: #0c0c0c;
+}
+/*---------------Main content------------*/
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.hero_container{
+    background-color: var(--main_color);
+    width: 60%;
+    height: 100%;
+    min-height: 300px;
+    border-radius: 25px;
+    place-content: center;
+    text-align: center;
+}
+.hero_container h2{
+    font-size: 1.8rem;
+}
+.hero_container p{
+    font-size: 1.2rem;
+}
+.hero_container button{
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 13px;
+    background-color: var(--text_color);
+    font-size: 1rem;
+    font-weight:600;
+    border:  1px solid black;
+}
+
+
+
+
+/*-----------Clothes----------*/
+.clothes_content, .Tradition_content, .Household_content{
+    margin: 25px 43px;
+    background-color: var(--Category_container_color);
+    border-radius: 10px;
+    overflow-x: hidden;
+    
+    
+}
+.Clothes_headers{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+.Clothes_headers .viewmorebtn{
+    margin: 13px 2px;
+    padding: 5px;
+    place-content: center;
+    border-radius: 10px;
+    border: 1px solid var(--addtocartbutton);
+    background-color: var(--text_color);
+}
+.Clothes_headers .viewmorebtn:hover{
+    background-color: var(--addtocartbutton);
+    color: #fff;
+}
+.clothes_cards{
+    display: flex;
+    flex-direction: row;
+    margin: 3px 20px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    background-color: var(--Category_container_color);
+    border-radius: 10px;
+    overflow-x: auto;
+}
+ .CL-card{
+    max-height: 400px;
+    max-width: 210px;
+    background-color: var(--text_color);
+    margin: 15px 10px;
+    border-radius: 10px;
+    border-style: #0c0c0c;
+    border: 1px solid var(--addtocartbutton);
+    cursor: pointer;
+}
+.clothes_cards img{
+    margin: 4px;
+    width: 200px;
+    height: 160px;
+    border-radius: 5px;
+}
+
+.CL-card h3, p, h4{
+    margin-left: 15px;
+}
+.CL-card .addtocart{
+    margin: 3px 0 10px 20px;
+    border-radius: 5px;
+    padding: 7px 25px;
+    border: 1px solid var(--addtocartbutton);
+    background-color: var(--text_color);
+}
+.CL-card .addtocart:hover{
+    background-color: var(--addtocartbutton);
+    color: #fff;
+}
+.CL-card .heart{
+    margin: 3px 20px 10px 0px;
+    border-radius: 100px;
+    border: none;
+    background-color: var(--text_color);
+}
+.CL-card .heart i{
+    font-size: 1.3rem;
+}
+.star-orange {
+    color: orange;
+}
+.CL-card .card_btns{
+    display: flex;
+    justify-content: space-between;
+}
+.mobile_narbar{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .hero_container{
+        width: 90%;
+    }
+    .hero_container button{
+        margin-bottom: 10px;
+    }
+    .clothes_cards{
+        display: flex;
+        flex-direction: row;
+        margin: 3px 20px;
+        overflow-x: hidden;
+        background-color: var(--Category_container_color);
+        border-radius: 10px;
+        overflow-x: auto;
+    }
+    .CL-card{
+        max-height: 360px;
+        max-width: 170px;
+        background-color: var(--text_color);
+        margin: 15px 8px;
+        border-radius: 10px;
+        border-style: #0c0c0c;
+        border: 1px solid var(--addtocartbutton);
+        cursor: pointer;
+    }
+    .clothes_cards img{
+        margin: 4px;
+        width: 160px;
+        height: 160px;
+        border-radius: 5px;
+    }
+    .CL-card h3, p, h4{
+        /*margin-left: 15px;*/
+        margin: 1px 0 2px 5px;
+    }
+    .CL-card .addtocart{
+        margin: 3px 0 10px 6px;
+        border-radius: 5px;
+        padding: 7px 35px;
+        border: 1px solid var(--addtocartbutton);
+        background-color: var(--text_color);
+    }
+    .CL-card .addtocart:hover{
+        background-color: var(--addtocartbutton);
+        color: #fff;
+    }
+    .CL-card .heart{
+        margin: 3px 2px 10px 0px;
+        border-radius: 100px;
+        border: none;
+        background-color: var(--text_color);
+    }
+    .CL-card .heart i{
+        font-size: 1.3rem;
+    }
+    .CL-card .card_btns{
+        display: flex;
+        justify-content: space-between;
+    } 
+    .mobile_narbar{
+        position: fixed;
+        bottom: 0;
+        left: 0;      
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000; 
+        width: 100%;
+        background-color: var(--main_color);
+        padding: 10px 1px;
+        display: none;
+        justify-content: space-around;
+    
+    }
+    .mobile_narbar i{
+        font-size: 1.5rem;
+        color: var(--text_color);
+    }  
+    
+}
+/*-----------Mobile----------*/
+

@@ -1,0 +1,131 @@
+:root{
+    --main_color : #ffde59;
+    --text_color : #fff;
+    --red_color : red;
+    --Category_container_color : #f5f3f3;
+    --addtocartbutton : #ffbd59;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    
+}
+a{
+    text-decoration: none;
+    color: #0c0c0c;
+}
+.profile_container_content{
+    background-color: var(--Category_container_color);
+    width: 500px;
+    margin: 1px auto 20px auto;
+    border-radius: 10px;
+}
+.profile_container_content h2{
+    margin-top: 19px;
+    text-align: center;
+}
+.profile_container_content form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.profile_container_content form button{
+    width: 410px;
+    margin:18px auto 15px auto;
+    padding: 8px;
+    border-radius: 9px;
+    font-size: 1rem;
+    font-weight: 550;
+    background-color: var(--text_color);
+    border: 1px solid var(--addtocartbutton);
+    cursor: pointer;
+} 
+.profile_container_content form button:hover{
+    background-color: var(--addtocartbutton);
+    color: #fff;
+}
+.profile_container_content form label{
+    margin: 1px 45px 1px 45px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: start;
+}
+.profile_container_content form input{
+    padding: 8px ;
+    border-radius: 7px;
+    margin: 1px 45px 7px 45px;
+    font-size: 1.1rem;
+}
+.address_container_content{
+    background-color: var(--Category_container_color);
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+}
+.address_container_content h2{
+    margin-top: 9px;
+    text-align: center;
+}
+.address_container_content form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.address_container_content form label{
+    margin: 1px 45px 1px 45px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: start;
+}
+.address_container_content form input{
+    padding: 8px ;
+    border-radius: 7px;
+    margin: 1px 45px 7px 45px;
+    font-size: 1.1rem;
+}
+.address_container_content form button{
+    width: 410px;
+    margin: 18px auto 15px auto;
+    padding: 8px;
+    border-radius: 9px;
+    font-size: 1rem;
+    font-weight: 550;
+    background-color: var(--text_color);
+    border: 1px solid var(--addtocartbutton);
+    cursor: pointer;
+}
+.address_container_content form button:hover{
+    background-color: var(--addtocartbutton);
+    color: #fff;
+}
+@media screen and (max-width: 768px){
+    .profile_container_content{
+        width: 100%;
+    }
+    .address_container_content{
+        width: 100%;
+    }
+    .profile_container_content form button{
+        max-width: 280px;
+    }
+    .address_container_content form button{
+        max-width: 280px;
+    }
+    
+    
+    .profile_container_content form input{
+        place-content: center;
+
+    }
+    .address_container_content form input{
+       max-width: 450px;
+    }
+    .profile_container_content form label{
+        width: 300px;
+    }
+    .address_container_content form label{
+        width: 300px;
+    }
+    
+}

@@ -1,0 +1,2 @@
+<?php
+$response = ["status" => "active"];

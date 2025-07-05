@@ -1,0 +1,236 @@
+:root{
+    --main_color : #ffde59;
+    --text_color : #fff;
+    --red_color : red;
+    --Category_container_color : #f5f3f3;
+    --addtocartbutton : #ffbd59;
+}
+a{
+    text-decoration: none;
+    color: #0c0c0c;
+}
+header{
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: var(--main_color);
+    padding: 15px 2px;
+    border-radius: 5px;
+    align-items: center;
+    width: 100%;
+    
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.desktop_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.header-name{
+    margin: 0;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 5px;
+}
+.search-input {
+    width: 400px;
+    padding: 8px;
+    border-style: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.mobile-search-input{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding:  8px;;
+    margin: 0;
+}
+.right_header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 19px;
+}
+.btns{
+    margin-right: 20px;
+}
+.mobile_search_input{
+    width: 100%;
+    margin: 4px 0;
+    display: none;
+}
+.profilebtn{
+    margin-right: 25px;
+}
+.header-button {
+    justify-content: center;
+    background-color: white;
+    color: orange;
+    border: black;
+    padding: 7px 7px;
+    margin: 0 5px 0 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.header-button:hover {
+    background-color: #ffcc99;
+    color: var(--text_color);
+}
+.right_header_content #account_selector{
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.cart-name{
+    font-size: 1.5em;
+    color: var(--text_color);
+}
+.cart-icon{
+    position: relative;
+}
+.cart-icon span{
+    top: 40%;
+    left: 23px;
+    padding: 1px 3px;
+    border-radius: 50%;
+    position: absolute;
+    color: var(--text_color);
+    background-color: var(--red_color);
+}
+.space_div{
+    display: none;
+}
+@media screen and (max-width: 710px){
+    .header-name{
+        font-size: 1.8rem;
+    }
+    .desktop_header{
+        display: flex;
+    }
+    .search-input{
+        display: none;
+    }
+    .right_header_content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .btns{
+        display: none;
+    }
+
+    .profilebtn{
+        display: block;
+    }
+    .header-button{
+        display: block;
+        padding: 5px 7px;
+        margin: 0;
+    }
+    .cart-name{
+        font-size: 1.3em;
+    }
+    .cart-icon span{
+        top: 40%;
+        left: 3px;
+        padding: 1px 3px;
+        border-radius: 50%;
+        position: absolute;
+        color: var(--text_color);
+        background-color: var(--red_color);
+    }
+    .mobile_search_input{
+        display: block;
+    }
+    
+}
+
+@media  (min-width: 711px )and (max-width: 998px){
+    
+    .right_header_content{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .profilebtn{
+        display: block;
+    }
+    .header-button{
+        display: block;
+        padding: 5px 7px;
+        margin: 0;
+    }
+    .btns{
+        display: none;
+    }
+    .cart-name{
+        font-size: 1.7em;
+    }
+    .cart-icon span{
+        top: 40%;
+        left: 18px;
+        padding: 1px 3px;
+        border-radius: 50%;
+        position: absolute;
+        color: var(--text_color);
+        background-color: var(--red_color);
+    }
+
+    
+}
+
+/*------------------------footer-----------------*/
+.footer_container{
+    background-color: var(--main_color);
+}
+.footer_container .content{
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer_container .content .content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+.footer_container .content .content1 a{
+    margin-top: 8px;
+    font-size: 1.2rem;
+}
+.footer_container .content .content2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer_container .content .content2 p{
+    text-align: start;
+}
+.footer_container p{
+    font-size: 1.1rem;
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    .footer_container .content{
+        flex-direction: column;
+    }
+    .footer_container .content .content1{
+        margin: 10px 0;
+    }
+    .footer_container .content .content2{
+        margin: 10px 0;
+    }
+    .footer_container p{
+        margin: 10px 0;
+    }
+    
+}

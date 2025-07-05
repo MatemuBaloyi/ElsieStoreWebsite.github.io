@@ -1,0 +1,216 @@
+:root{
+    --main_color : #ffde59;
+    --text_color : #fff;
+    --red_color : red;
+    --Category_container_color : #f5f3f3;
+    --addtocartbutton : #ffbd59;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    
+}
+a{
+    text-decoration: none;
+    color: #0c0c0c;
+}
+.container_content{
+    background-color: var(--Category_container_color);
+    width: 500px;
+    margin: 10px auto;
+    padding: 15px 1px;
+    border-radius: 10px;
+}
+.container_content h1{
+    margin-top: 19px;
+    text-align: center;
+}  
+.container_content h3{
+    text-align: center;
+}  
+.container_content h3 a{
+    color: blue;
+}
+.container_content form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container_content form label{
+    margin: 1px 45px 1px 45px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.container_content form input{
+    padding: 8px ;
+    border-radius: 7px;
+    margin: 1px 45px 7px 45px;
+    font-size: 1.1rem;
+}
+.container_content form a{
+    color: blue;
+}
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    height: 18px;
+    width: 18px;
+    background-color: #f1f1f1;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+  
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: #e6e6e6;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .checkbox-container a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 4px;
+  }
+  
+  .checkbox-container a:hover {
+    text-decoration: underline;
+  }
+  
+.container_content form button{
+    width: 410px;
+    margin:18px auto 2px auto;
+    padding: 8px;
+    border-radius: 9px;
+    font-size: 1rem;
+    font-weight: 550;
+    background-color: var(--text_color);
+    border: 1px solid var(--addtocartbutton);
+    cursor: pointer;
+}
+.container_content form button:hover{
+    background-color:var(--addtocartbutton) ;
+    color: #fff;
+}
+ /* Popover Styling */
+
+        .popover {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .popover.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .popover.error {
+            background: #E74C3C;
+        }
+
+@media screen and (max-width: 600px) {
+    .container_content{
+        width: 100%;
+    }
+    .container_content form{
+        width: 100%;
+    }
+    .container_content form label{
+        margin: 1px 10px 1px 10px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    .container_content form input{
+        padding: 8px ;
+        border-radius: 7px;
+        margin: 1px 10px 7px 10px;
+        font-size: 1.1rem;
+    }
+    .container_content form button{
+        width: 100px;
+        margin:18px auto 2px auto;
+        padding: 8px;
+        border-radius: 9px;
+        font-size: 1rem;
+        font-weight: 550;
+        
+    }
+    .container_content form button:hover{
+        background-color: var(--addtocartbutton);
+        color: #fff;
+    }
+    .popover {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #4CAF50;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+}        

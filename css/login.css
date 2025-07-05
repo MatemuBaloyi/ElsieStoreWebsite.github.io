@@ -1,0 +1,102 @@
+:root{
+    --main_color : #ffde59;
+    --text_color : #fff;
+    --red_color : red;
+    --Category_container_color : #f5f3f3;
+    --addtocartbutton : #ffbd59;
+}
+a{
+    text-decoration: none;
+    color: #0c0c0c;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    
+}
+main{
+    height: 500px;
+}
+.login_container{
+   place-content: center;
+}
+.login_container_content{
+    background-color: var(--Category_container_color);
+    width: 500px;
+    margin: 10px auto;
+    padding: 15px 1px;
+    border-radius: 10px;
+}
+.login_container_content h1{
+    margin-top: 9px;
+    text-align: center;
+}
+.login_container_content h3{
+    text-align: center;
+}
+.login_container_content h3 a{
+    color: blue;
+}
+.login_container_content form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.login_container_content form label{
+    margin: 1px 45px 1px 45px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.login_container_content form input{
+    padding: 8px ;
+    border-radius: 7px;
+    margin: 1px 45px 7px 45px;
+    font-size: 1.1rem;
+}
+.login_container_content form a{
+    margin-right: 45px;
+    text-align: end;
+    color: blue;
+}
+.login_container_content form button{
+    width: 410px;
+    margin:18px auto 2px;
+    padding: 8px;
+    border-radius: 9px;
+    font-size: 1rem;
+    font-weight: 550;
+    background-color: var(--text_color);
+    border: 1px solid var(--addtocartbutton);
+    cursor: pointer;
+}
+.login_container_content form button:hover{
+    background-color: var(--addtocartbutton);
+    color: #fff;
+}
+
+
+@media screen and (max-width: 600px) {
+    .login_container_content{
+        width: 100%;
+    }
+    .login_container_content form{
+        width: 100%;
+    }
+    .login_container_content form label{
+        margin: 1px 10px 1px 10px;
+    }
+    .login_container_content form input{
+        margin: 1px 10px 7px 10px;
+    }
+    .login_container_content form button{
+        margin:18px auto 2px auto;
+    }
+    .login_container_content form a{
+        margin-right: 10px;
+    }
+    .popover {
+        top: 10%;
+        right: 10%;
+    }
+    
+}
